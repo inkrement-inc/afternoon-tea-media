@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Afternoon Tea Times - アフタヌーンティー専用情報メディア
 
-## Getting Started
+全国のアフタヌーンティースポットを紹介する情報メディアサイト
 
-First, run the development server:
+## 🌟 主な機能
+
+- 📰 **記事一覧** - アフタヌーンティーの情報を分かりやすく表示
+- 🔍 **検索機能** - キーワードで記事を検索
+- 🏷️ **カテゴリーフィルター** - カテゴリーごとに記事を絞り込み
+- ⭐ **評価・レビュー** - 各スポットの評価とレビュー表示
+- 📍 **エリア情報** - 地域別のスポット情報
+- 🎨 **レスポンシブデザイン** - モバイルフレンドリーなUI
+
+## 🛠️ 使用技術
+
+- **フレームワーク**: Next.js 15 (App Router)
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS
+- **アイコン**: Lucide React
+- **画像**: Next/Image (最適化)
+
+## 🚀 セットアップ
 
 ```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# ビルド
+npm run build
+
+# 本番環境での起動
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開発サーバーは [http://localhost:3000](http://localhost:3000) で起動します。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 プロジェクト構造
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+afternoon-tea-media/
+├── app/
+│   ├── page.tsx          # メインページ
+│   ├── layout.tsx        # レイアウト
+│   └── globals.css       # グローバルスタイル
+├── components/
+│   ├── ArticleCard.tsx       # 記事カードコンポーネント
+│   ├── SearchBar.tsx         # 検索バーコンポーネント
+│   └── CategoryFilter.tsx    # カテゴリーフィルター
+└── public/               # 静的ファイル・画像
+```
 
-## Learn More
+## 💡 今後の拡張予定
 
-To learn more about Next.js, take a look at the following resources:
+- CMSとの連携（Contentful / Sanity）
+- 記事詳細ページ
+- ユーザーレビュー投稿機能
+- お気に入り機能
+- SNS共有機能
+- 地図表示機能
+- 予約システム連携
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 ターゲット
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- アフタヌーンティー愛好家
+- 特別な日のお祝いを計画している人
+- 優雅なティータイムを楽しみたい人
 
-## Deploy on Vercel
+## 📄 ライセンス
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+© 2024 Inkrement Inc.
